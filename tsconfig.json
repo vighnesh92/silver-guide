@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-demo-sg": [
+        "dist/ngx-demo-sg"
+      ],
+      "ngx-demo-sg/*": [
+        "dist/ngx-demo-sg/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
