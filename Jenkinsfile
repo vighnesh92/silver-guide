@@ -25,10 +25,18 @@ pipeline {
                 sh 'npm run test'
             }
         }
-        stage('Publish') {
+        stage('Deploy') {
             steps {
                 sh 'npm run semantic-release'
             }
+        }
+    }
+    post {
+        success {
+            echo 'I succeeeded!'
+        }
+        failure {
+            echo 'I failed :('
         }
     }
 }
