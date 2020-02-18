@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'demo-ngx-demo-sg',
   template: `
     <p>
-      ngx-demo-sg works!
+      ngx-demo-sg works!!
     </p>
   `,
   styles: []
