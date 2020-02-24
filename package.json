@@ -55,6 +55,12 @@
   },
   "release": {
     "pkgRoot": "dist/ngx-demo-sg/",
-    "branches": ["master"]
+    "branches": [
+      "master",
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
   }
 }
