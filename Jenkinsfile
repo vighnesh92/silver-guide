@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'node:lts' 
-            args '-p 3000:3000' 
+            image 'node:lts'
+            args '-p 3000:3000'
         }
     }
     environment {
@@ -20,11 +20,11 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm run test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'npm run test'
+        //     }
+        // }
         stage('Deploy') {
             steps {
                 sh 'npm run semantic-release'
