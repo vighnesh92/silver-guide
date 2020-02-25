@@ -53,12 +53,15 @@
     "type": "git",
     "url": "https://github.com/vighnesh92/silver-guide"
   },
+  "publishConfig": {
+    "tag": "alpha"
+  },
   "release": {
     "pkgRoot": "dist/ngx-demo-sg/",
     "branches": [
       "master",
       {
-        "name": "alpha",
+        "name": "alpha1",
         "prerelease": true
       }
     ]
